@@ -48,11 +48,29 @@ public interface IDataSet extends ITableProducer, IDataSource {
 ## Detalhamento das Interfaces
 
 ### Interface `IAtestado`
+` Esta interface implementa a impressão do atestado do paciente.`.
+
+Método | Objetivo
+-------| --------
+`Atestado(ITratamentos tratamentos)` | `Recebe um conjunto`
+`imprimirAtestado(IDiagnostico diagnostico)` | `Recebe um conjunto`
+
+### Interface `ITratamento`
 `Interfaçe prove a implementação de leitura de um DataSet que contenha os tratamentos e gere um atestado.`.
 
 Método | Objetivo
 -------| --------
-`Atestado(ITratamentos tratamentos)` | `Recebe um conjunto `
+`void addTratamento(String doenca, String Tratamento)` | `Adiciona um novo tratamento a lista`
+`String getTratamento(String doenca)` | `Retorna o tratamento`
+
+### Interface `IDiagnostico`
+`Interfaçe prove a implementação de leitura de um DataSet que contenha os tratamentos e gere um atestado.`.
+
+Método | Objetivo
+-------| --------
+`void addTratamento(String doenca, String Tratamento)` | `Adiciona um novo tratamento a lista`
+`String getTratamento(String doenca)` | `Retorna `
+
 
 ### Interface `Zumbi Twitteiro`
 `<papel da interface>`.
