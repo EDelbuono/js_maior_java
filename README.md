@@ -1,16 +1,6 @@
 # Components
 
 
-
-
-# Modelo para Documentação de um Componente
-
-A documentação será feita em Markdown, vide detalhes sobre ele em: https://guides.github.com/features/mastering-markdown/
-
-E mais especificamente sobre tabelas em: https://help.github.com/en/articles/organizing-information-with-tables
-
-Segue abaixo o modelo de como deve ser documentado um componente. Tudo o que for indicado entre `<...>` indica algo que deve ser substituído pelo indicado.
-
 # Componente `Zumbi Twitteiro`
 
 Campo | Valor
@@ -37,10 +27,10 @@ public interface IDataSet extends ITableProducer, IDataSource {
 
 Campo | Valor
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
+Classe | `src.js.maior.java.Atestado` <br>
+Autores | ``
+Objetivo | `Gerar um atestado com a recomendações de tratamento para um doença. O atestado irá conter o nome do doutor também.`
+Interface | `IAtestado`
 ~~~
 public interface ITableProducer {
   String[] requestAttributes();
@@ -57,12 +47,12 @@ public interface IDataSet extends ITableProducer, IDataSource {
 
 ## Detalhamento das Interfaces
 
-### Interface `Atestado`
-`<papel da interface>`.
+### Interface `IAtestado`
+`Interfaçe prove a implementação de leitura de um DataSet que contenha os tratamentos e gere um atestado.`.
 
 Método | Objetivo
 -------| --------
-`<id do método em Java>` | `<objetivo do método e descrição dos parâmetros>`
+`Atestado(ITratamentos tratamentos)` | `Recebe um conjunto `
 
 ### Interface `Zumbi Twitteiro`
 `<papel da interface>`.
@@ -70,3 +60,10 @@ Método | Objetivo
 Método | Objetivo
 -------| --------
 `<id do método em Java>` | `<objetivo do método e descrição dos parâmetros>`
+
+
+
+
+OBS:
+Itratamentos deve ter a relação entre doença e tratamento;
+Ela deve ser preenchida qundo lermos os dados com as doenças, de forma aleatoria
