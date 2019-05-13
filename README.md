@@ -46,7 +46,9 @@ Método | Objetivo
 `imprimirAtestado(IDiagnostico diagnostico)` | `Imprime um atestado`
 
 ### Interface `ITratamento`
-`Interfaçe prove a implementação de leitura de um DataSet que contenha os tratamentos e gere um atestado.`.
+`Implementa a forma como os tratamentos são conectados às doenças específicas de cada iteração.
+ O método addTratamento conecta cada uma das doenças da tabela a um tratamento aleatório, porém
+único para essa iteração do programa.`.
 
 Método | Objetivo
 -------| --------
