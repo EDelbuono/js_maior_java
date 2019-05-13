@@ -65,7 +65,7 @@ Método | Objetivo
 `public String tratamento()` | `Retorna o tratamento para a doença`
 
 ### Interface `Zumbi Twitteiro`
-`<papel da interface>`.
+`Simplesmente fazer o tweet com os detalhes do caso clínico e talvez um meme aqui e outro ali`.
 
 Método | Objetivo
 -------| --------
