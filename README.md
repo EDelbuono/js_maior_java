@@ -67,13 +67,13 @@ Método | Objetivo
 `public String tratamento()` | `Retorna o tratamento para a doença`
 
 ### Interface `Zumbi Twitteiro`
-`Simplesmente fazer o tweet com os detalhes do caso clínico e talvez um meme aqui e outro ali`.
+`Interface cujo objetivo é publicar, em um tweet, o diagnóstico do paciente, contendo as informações da interface IDiagnostico mencionada`.
 
 Método | Objetivo
 -------| --------
-`boolean twittar(IDiagnostico diagnostico)` | `Twitta ueh`
+`boolean twittar(IDiagnostico diagnostico)` | `Publica o diagnóstico do paciente no twitter`
 
 
 OBS:
 ITratamentos deve ter a relação entre doença e tratamento;
-Ela deve ser preenchida qundo lermos os dados com as doenças, de forma aleatoria
+Ela deve ser preenchida quando lermos os dados com as doenças, de forma aleatoria
