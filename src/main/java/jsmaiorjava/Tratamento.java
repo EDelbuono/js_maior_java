@@ -36,4 +36,8 @@ public class Tratamento implements ITratamento {
             System.out.println(this.lista.get(i));
         } */
     }
+
+    ArrayList<String> getTratamento() {
+        return lista;
+    }
 }
