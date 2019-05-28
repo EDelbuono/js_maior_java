@@ -1,6 +1,6 @@
 package jsmaiorjava;
 
-public interface IDiagnostico {
+public interface IProntuario {
     String doutor();
     String paciente();
     String doenca();
