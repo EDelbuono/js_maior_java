@@ -2,7 +2,7 @@
 # Projeto 
 
  Receber e analisar uma tabela com informaçõe de sintomas e doenças. A partir disso o usuário podera escolher entre imprimir um atestado ou twittar a doença. O programa de ve rodar ate que seja fechado para guardar estatisticas de doenças e suas recorrência.
- O diagnostico será gerado a partir dos sintomas que o usuário ou irá marcar em checkbox ou irá responder a uma pergunta e usaremos processamento de linguagem natural para decidir se é positivo ou negativo a resposta.
+ O diagnostico será gerado a partir dos sintomas que o usuário ou irá marcar em checkbox ou irá responder a uma pergunta e usaremos processamento de linguagem natural para decidir se é positivo ou negativo a resposta. 
 
  Vamos usar as seguintes bibliotecas e componentes:
   - PDF creator;
@@ -15,7 +15,8 @@
 
   - A analise e gerar o diagnostico usando a arvore balanceada;
   - Integrar a bibliotecas.
-  - Usar a interface grafica;
+  - Criar o compoente de interface grafica que define automaticamente na tela coisas que quisermos;
+  - Criar um serializer para o estado das perguntas;
 
 # Components
 
