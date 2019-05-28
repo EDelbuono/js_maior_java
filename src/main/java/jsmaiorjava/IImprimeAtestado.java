@@ -4,6 +4,6 @@ interface IImprimeAtestado {
     /*
     Gera uma imagem de um atestado o diagnostico da doenca e a rubrica do doutor
     */
-    boolean imprime(IDiagnostico diagnostico);
+    public void imprime(String doutor, String paciente, String doenca);
 }
 

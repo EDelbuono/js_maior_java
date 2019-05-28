@@ -37,7 +37,7 @@ public class Tratamento implements ITratamento {
         } */
     }
 
-    ArrayList<String> getTratamento() {
+    public ArrayList<String> getTratamento() {
         return lista;
     }
 }
