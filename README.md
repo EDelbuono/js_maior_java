@@ -1,7 +1,26 @@
+
+# Projeto 
+
+ Receber e analisar uma tabela com informaçõe de sintomas e doenças. A partir disso o usuário podera escolher entre imprimir um atestado ou twittar a doença. O programa de ve rodar ate que seja fechado para guardar estatisticas de doenças e suas recorrência.
+ O diagnostico será gerado a partir dos sintomas que o usuário ou irá marcar em checkbox ou irá responder a uma pergunta e usaremos processamento de linguagem natural para decidir se é positivo ou negativo a resposta.
+
+ Vamos usar as seguintes bibliotecas e componentes:
+  - PDF creator;
+  - Twitter API;
+  - Arvore balançeada (Component externo ou o nosso);
+  - Analise de estaticas;
+  - Inteface gráfica  
+
+  O que devemos implementar:
+
+  - A analise e gerar o diagnostico usando a arvore balanceada;
+  - Integrar a bibliotecas.
+  - Usar a interface grafica;
+
 # Components
 
-
 # Componente `Zumbi Twitteiro`
+`Interface cujo objetivo é publicar, em um tweet, o diagnóstico do paciente, contendo as informações da interface IDiagnostico mencionada`.
 
 Campo | Valor
 ----- | -----
@@ -65,14 +84,6 @@ Método | Objetivo
 `public String doenca()` | `Retorna o nome da doença`
 `public String descricaoDoenca()` | `Retorna a descrição da doença`
 `public String tratamento()` | `Retorna o tratamento para a doença`
-
-### Interface `Zumbi Twitteiro`
-`Interface cujo objetivo é publicar, em um tweet, o diagnóstico do paciente, contendo as informações da interface IDiagnostico mencionada`.
-
-Método | Objetivo
--------| --------
-`boolean twittar(IDiagnostico diagnostico)` | `Publica o diagnóstico do paciente no twitter`
-
 
 OBS:
 ITratamentos deve ter a relação entre doença e tratamento;
