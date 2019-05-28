@@ -19,6 +19,4 @@ public class ImprimeAtestado implements IImprimeAtestado {
 
         System.out.println("Nome do doutor: " + doutor + " Nome do Paciente: " + paciente + "\n" + "Tratamento: " + trt);
     }
-
-
 }
