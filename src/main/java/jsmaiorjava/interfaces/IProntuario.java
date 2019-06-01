@@ -7,3 +7,4 @@ public interface IProntuario {
   public String paciente(String nome);
   public String doenca();
 }
+
