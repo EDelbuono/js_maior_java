@@ -2,33 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ae8c4a2-8d76-41c1-9d72-db943ec520cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eclipse.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/resources.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/twitter4j.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_maior_java.iml" beforeDir="false" afterPath="$PROJECT_DIR$/js_maior_java.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/outros/js_maior_java.java" beforeDir="false" afterPath="$PROJECT_DIR$/outros/js_maior_java.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/DataSetComponent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/DataSetComponent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/IDataSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/IDataSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/IDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/IDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/IImprimeAtestado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/IImprimeAtestado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/IProntuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/IProntuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/ITableProducer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/ITableProducer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/ITableProducerReceptacle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/ITableProducerReceptacle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/ITratamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/ITratamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/IZumbiTwittero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/IZumbiTwittero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/ImprimeAtestado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/ImprimeAtestado.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/Tratamento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/Tratamento.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/jsmaiorjava/implementations/ZumbiTwittero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/jsmaiorjava/implementations/ZumbiTwittero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/jsmaiorjava/zombie-health-spreadsheet-ml-training.csv" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+            <state relative-caret-position="210">
+              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,8 +99,8 @@
         <option value="$PROJECT_DIR$/src/twitter4j.properties" />
         <option value="$PROJECT_DIR$/src/main/java/jsmaiorjava/implementations/ZumbiTwittero.java" />
         <option value="$PROJECT_DIR$/src/main/java/jsmaiorjava/interfaces/IImprimeAtestado.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/Main.java" />
       </list>
     </option>
   </component>
@@ -235,15 +209,16 @@
       <workItem from="1557842082567" duration="2074000" />
       <workItem from="1557941824514" duration="1860000" />
       <workItem from="1557943852084" duration="5073000" />
-      <workItem from="1559349340423" duration="3246000" />
+      <workItem from="1559349340423" duration="3849000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12253000" />
+    <option name="totallyTimeSpent" value="12856000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="34" width="1920" height="1046" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22038421" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -432,8 +407,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state relative-caret-position="210">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

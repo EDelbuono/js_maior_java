@@ -11,7 +11,8 @@ public class Main {
 
         try {
             Twitter twitter = TwitterFactory.getSingleton();
-            Status status = twitter.updateStatus("Hello World! (again)");
+            // Status status = twitter.updateStatus("Hello World! (again)");
+            System.out.println("Confia no pai que ta funcionando    ");
         }
         catch (Exception e){
             System.out.println(e);
