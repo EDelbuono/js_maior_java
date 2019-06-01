@@ -1,8 +1,9 @@
 package jsmaiorjava.interfaces;
 
 public interface IProntuario {
-    String doutor();
-    String paciente();
-    String doenca();
-    String tratamento();
+  public String doutor();
+  public String doutor(String nome);
+  public String paciente();
+  public String paciente(String nome);
+  public String doenca();
 }
