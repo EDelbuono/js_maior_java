@@ -32,7 +32,6 @@ public class Prontuario implements IProntuario{
   }
 
 
-  // ******Deve ser criado um método que recebe o nome da doença e adiciona a um vetor de doencas identificadas, para que seja possícel o armazenamento das doencas e tratamentos.*******
 
   public String doutor(){
     if (doutor!=""){
