@@ -46,9 +46,7 @@ Objetivo | `Gerar um atestado com a recomendações de tratamento para um doenç
 Interface | `IAtestado`
 ~~~java
 interface IImprimeAtestado {
-  /*
-  Gera uma imagem de um atestado o diagnostico da doenca e a rubrica do doutor
-  */
+  prontuario
   public boolean imprime(IDiagnostico diagnostico);
 }
 ~~~

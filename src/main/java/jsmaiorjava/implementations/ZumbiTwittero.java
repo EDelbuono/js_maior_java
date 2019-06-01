@@ -1,25 +1,25 @@
 package jsmaiorjava.implementations;
 
-import jsmaiorjava.IDiagnostico;
-import jsmaiorjava.IZumbiTwittero;
+import jsmaiorjava.interfaces.IProntuario;
+import jsmaiorjava.interfaces.IZumbiTwittero;
 import twitter4j.Status;
 import twitter4j.Twitter;
 import twitter4j.TwitterFactory;
 
 public class ZumbiTwittero implements IZumbiTwittero {
 
-    protected IDiagnostico diagnostico;
+    protected IProntuario prontuario;
 
-    public ZumbiTwittero(IDiagnostico diagnostico){
-        this.diagnostico = diagnostico;
+    public ZumbiTwittero(IProntuario prontuario){
+        this.prontuario = prontuario;
     }
 
     protected String construirStatus(){
         return "AE MEUS BONS, MAIS DOENSÇAS DIAGNOSTICASDAS:" +
-                diagnostico.doutor() " " +
-                "examinando " + diagnostico.paciente() ". " +
-                "O tratamento consiste em: " + diagnostico.tratamento() + "\n" +
-                "Vamos erradiar tudo que seja " + diagnostico.doenca() "."
+                prontuario.doutor() + " " +
+                "examinando " + prontuario.paciente() + ". " +
+                "O tratamento consiste em: " + prontuario.tratamento() + "\n" +
+                "Vamos erradiar tudo que seja " + prontuario.doenca() + ".";
 
     }
 

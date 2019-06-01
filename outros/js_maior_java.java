@@ -17,7 +17,7 @@ interface IDiagnostico {
 
 interface ITratamento {
   /*
-  Gera diagnostico 
+  Gera prontuario
   */
   public IDiagnostico gerarDiagnostico(String doutor, 
                                        String paciente, 
@@ -27,7 +27,7 @@ interface ITratamento {
 
 interface IImprimeAtestado {
   /*
-  Gera uma imagem de um atestado o diagnostico da doenca e a rubrica do doutor
+  Gera uma imagem de um atestado o prontuario da doenca e a rubrica do doutor
   */
   public boolean imprime(IDiagnostico diagnostico);
 }
@@ -42,13 +42,13 @@ interface IZumbiTwittero {
 /*
 class Main {
   public static void main(String[] args) {
-    IDiagnostico diagnostico = (new Tratamento())
+    IDiagnostico prontuario = (new Tratamento())
                                .gerarTratamento("Dr. Freitas Vou Comer Seu Cérebro",
                                                 "José Morto",
                                                 "trembling_fingers",
                                                 "Treme mais que a peste");
-    (new ZumbiTwittero(diagnostico)).twittar();
-    (new ImprimeAtestado(diagnostico)).imprime();
+    (new ZumbiTwittero(prontuario)).twittar();
+    (new ImprimeAtestado(prontuario)).imprime();
   }
 }
 */

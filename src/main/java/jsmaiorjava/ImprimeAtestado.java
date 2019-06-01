@@ -1,5 +1,6 @@
 package jsmaiorjava;
-import java.util.ArrayList;
+import jsmaiorjava.interfaces.IImprimeAtestado;
+import jsmaiorjava.interfaces.IProntuario;
 
 public class ImprimeAtestado implements IImprimeAtestado {
     public ImprimeAtestado() {

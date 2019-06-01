@@ -1,4 +1,4 @@
-package jsmaiorjava;
+package jsmaiorjava.interfaces;
 
 public interface IProntuario {
     String doutor();

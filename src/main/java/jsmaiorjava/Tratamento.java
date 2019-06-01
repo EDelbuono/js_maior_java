@@ -1,5 +1,8 @@
 package jsmaiorjava;
 
+import jsmaiorjava.interfaces.IDataSet;
+import jsmaiorjava.interfaces.ITratamento;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;

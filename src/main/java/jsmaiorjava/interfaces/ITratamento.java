@@ -1,9 +1,9 @@
-package jsmaiorjava;
+package jsmaiorjava.interfaces;
 import java.util.ArrayList;
 
 public interface ITratamento {
     /*
-    Gera diagnostico
+    Gera prontuario
     */
 
     public ArrayList<String> getTratamento();
