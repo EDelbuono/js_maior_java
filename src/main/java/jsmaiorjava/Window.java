@@ -30,13 +30,13 @@ public class Window implements IWindow {
     // open the window
     public void open() {
         this.window.setVisible(true);
-        this.centreWindow(this.window);
-    }
-
-    private void centreWindow(JFrame frame) {
+        // center the window
         Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
-        int x = (int) ((dimension.getWidth() - frame.getWidth()) / 2);
-        int y = (int) ((dimension.getHeight() - frame.getHeight()) / 2);
-        frame.setLocation(x, y);
+        int x = (int) ((dimension.getWidth() - this.window.getWidth()) / 2);
+        int y = (int) ((dimension.getHeight() - this.window.getHeight()) / 2);
+        this.window.setLocation(x, y);
+    }
+    // center the window on screen
+    private void centreWindow(JFrame frame) {
     }
 }
