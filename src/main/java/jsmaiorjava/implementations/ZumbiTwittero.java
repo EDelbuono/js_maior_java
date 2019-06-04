@@ -15,12 +15,11 @@ public class ZumbiTwittero implements IZumbiTwittero {
     }
 
     protected String construirStatus(){
-        return "AE MEUS BONS, MAIS DOENSÇAS DIAGNOSTICASDAS:" +
-                prontuario.doutor() + " " +
-                "examinando " + prontuario.paciente() + ". " +
-                "O tratamento consiste em: " + prontuario.tratamento() + "\n" +
-                "Vamos erradiar tudo que seja " + prontuario.doenca() + ".";
-
+        return "AE MEUS BONS, MAIS DOENÇAS DIAGNOSTICADAS:\n" +
+                prontuario.getDoutor() + " " +
+                "examinando " + prontuario.getPaciente() + ".\n" +
+                "O tratamento consiste em: " + prontuario.getTratamento() + "\n" +
+                "Vamos erradicar tudo que seja " + prontuario.getDoenca() + ".";
     }
 
     public boolean twittar() {

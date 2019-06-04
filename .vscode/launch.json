@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
+            "mainClass": "Main",
+            "projectName": "utilidades"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
             "mainClass": "jsmaiorjava.Main",
             "projectName": "utilidades"
         }
