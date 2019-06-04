@@ -1,3 +1,5 @@
+import jsmaiorjava.interfaces.*;
+import jsmaiorjava.implementations.*;
 import jsmaiorjava.interfaces.IProntuario;
 import jsmaiorjava.interfaces.ITratamento;
 import jsmaiorjava.interfaces.IZumbiTwittero;
@@ -12,8 +14,10 @@ public class Main {
 
     public static void main(String[] args) {
         // IZumbiTwittero zt = new ZumbiTwittero(new Prontuario());
+        Window win = new Window();
+        win.open();
 
-        try {
+        /*try {
             String doenca = "esclerose múltipla";
             ITratamento tratamento = new Tratamento(doenca);
             String paciente = "Enricao DelBom";
@@ -31,6 +35,6 @@ public class Main {
         catch (Exception e){
             System.out.println(e);
         }
-
+*/
     }
 }
