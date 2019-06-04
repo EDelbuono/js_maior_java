@@ -1,6 +1,8 @@
-package jsmaiorjava;
+package jsmaiorjava.implementations;
 
 import jsmaiorjava.interfaces.IProntuario;
+import jsmaiorjava.interfaces.ITratamento;
+
 import java.util.Random;
 
 
@@ -14,6 +16,8 @@ public class Prontuario implements IProntuario{
   private String paciente="";
   private String doenca="";
   private Random aleatorio = new Random();
+  private ITratamento tratamento;
+  
   
   /* São criados dois construtores para as situações em que 
   -não são fornecidos, no construtor, nomes do médico ou do paciente, mas é fornecida a doença; ou
@@ -25,15 +29,28 @@ public class Prontuario implements IProntuario{
     this.doutor=doutor;
     this.paciente=paciente;
     this.doenca=doenca;
+    this.tratamento = new Tratamento(doenca);
+
   }
 
-  public Prontuario( String doenca){
+  public Prontuario(String doenca){
     this.doenca=doenca;
+    this.tratamento = new Tratamento(doenca);
+  }
+
+  public Prontuario(ITratamento tratamento) {
+    this.doenca = tratamento.getDoenca();
+    this.tratamento = tratamento;
+  }
+
+  public Prontuario(ITratamento tratamento, String paciente, String doutor) {
+    this(tratamento);
+    this.paciente = paciente;
+    this.doutor = doutor;
   }
 
 
-
-  public String doutor(){
+  public String getDoutor(){
     if (doutor!=""){
       return doutor;
     }
@@ -64,10 +81,10 @@ public class Prontuario implements IProntuario{
     return doutor;  
   }
 
-  public String doutor(String nome){
+  public String getDoutor(String nome){
     //Caso o parâmetro seja uma string vazia, gera um nome para o médico.
     if (nome==""){
-      return doutor();
+      return getDoutor();
     }
     //Caso o médico já tenha um nome armazenado, é retornado ele.
     if (doutor!=""){
@@ -85,7 +102,7 @@ public class Prontuario implements IProntuario{
     return doutor;
   }
 
-  public String paciente(){
+  public String getPaciente(){
     if (paciente!=""){
       return paciente;
     }
@@ -108,21 +125,23 @@ public class Prontuario implements IProntuario{
     return paciente;      
   }
 
-  public String paciente(String nome){
+  public String getPaciente(String nome){
     /*Caso o parâmetro seja uma string vazia, gera um nome para o paciente.*/
     if (nome==""){
-      return paciente();
+      return getPaciente();
     }
     /*Caso o paciente já tenha um nome armazenado, é retornado ele.*/
     paciente=nome;
     return paciente;
   }
-
-
-  public String doenca(){
-    return doenca;
+  
+  public String getTratamento(){
+    return this.tratamento.getTratamento();
   }
- 
+
+  public String getDoenca() {
+    return this.doenca;
+  }
 }
 
 

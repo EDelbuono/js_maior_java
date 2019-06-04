@@ -1,4 +1,4 @@
-package jsmaiorjava;
+package jsmaiorjava.implementations;
 
 import jsmaiorjava.interfaces.IDataSet;
 
