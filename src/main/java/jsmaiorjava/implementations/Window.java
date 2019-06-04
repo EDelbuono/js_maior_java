@@ -1,9 +1,8 @@
 package jsmaiorjava.implementations;
 
-import jsmaiorjava.interfaces.IImprimeAtestado;
+
 import jsmaiorjava.interfaces.IWindow;
 import jsmaiorjava.interfaces.IWindowOperation;
-import jsmaiorjava.interfaces.IZumbiTwittero;
 
 import javax.swing.*;
 import java.awt.*;
@@ -16,7 +15,7 @@ public class Window implements IWindow {
     // Funcoes dos botoes
     private IWindowOperation operations;
 
-    Window(IWindowOperation operations) {
+    public Window(IWindowOperation operations) {
         // init the window
         this.window = new JFrame("Doctor who?");
         this.window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -28,7 +27,7 @@ public class Window implements IWindow {
         this.operations = operations;
     }
 
-    Window() {
+    public Window() {
         // init the window
         this.window = new JFrame("Doctor who?");
         this.window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
