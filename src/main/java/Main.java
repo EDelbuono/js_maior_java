@@ -1,15 +1,5 @@
-import jsmaiorjava.interfaces.IImprimeAtestado;
-import jsmaiorjava.interfaces.IProntuario;
-import jsmaiorjava.interfaces.ITratamento;
-import jsmaiorjava.interfaces.IZumbiTwittero;
-import jsmaiorjava.implementations.ImprimeAtestado;
-import jsmaiorjava.implementations.Prontuario;
-import jsmaiorjava.implementations.Tratamento;
-import jsmaiorjava.implementations.ZumbiTwittero;
-import twitter4j.Status;
-import twitter4j.Twitter;
-import twitter4j.TwitterFactory;
 import jsmaiorjava.implementations.*;
+import jsmaiorjava.interfaces.*;
 
 public class Main {
     public static void main(String[] args) {
