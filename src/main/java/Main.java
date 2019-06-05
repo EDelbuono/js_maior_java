@@ -4,14 +4,26 @@ import jsmaiorjava.interfaces.*;
 public class Main {
     public static void main(String[] args) {
 
-        //Teste da impressão do PDF
-       /*  IImprimeAtestado atestado = new ImprimeAtestado();
+        /* Teste da impressão do PDF */
+       
+    /*  
+        IImprimeAtestado atestado = new ImprimeAtestado();
         IProntuario prontuario = new Prontuario("João", "Victor Coelho", "dor de cabeça");
-        atestado.imprime(prontuario); */
+        atestado.imprime(prontuario); 
+    */
         
-        // IZumbiTwittero zt = new ZumbiTwittero(new Prontuario());
+        /* Teste do Twitter */
 
-       /*  try {
+    //  IZumbiTwittero zt = new ZumbiTwittero(new Prontuario());
+
+        /* Teste da janela */
+    /*
+        Window win = new Window();
+        win.open();
+    */
+
+        /* Teste de logica do programa */
+    /*  try {
             String doenca = "esclerose múltipla";
             ITratamento tratamento = new Tratamento(doenca);
             String paciente = "Enricao DelBom";
@@ -28,7 +40,8 @@ public class Main {
         }
         catch (Exception e){
             System.out.println(e);
-        } */
+        } 
+    */
 
     }
 }
