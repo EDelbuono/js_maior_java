@@ -1,18 +1,9 @@
-import jsmaiorjava.interfaces.*;
 import jsmaiorjava.implementations.*;
-import jsmaiorjava.interfaces.IProntuario;
-import jsmaiorjava.interfaces.ITratamento;
-import jsmaiorjava.interfaces.IZumbiTwittero;
-import jsmaiorjava.implementations.Prontuario;
-import jsmaiorjava.implementations.Tratamento;
-import jsmaiorjava.implementations.ZumbiTwittero;
-import twitter4j.Status;
-import twitter4j.Twitter;
-import twitter4j.TwitterFactory;
 
 public class Main {
-
     public static void main(String[] args) {
+
+
         // IZumbiTwittero zt = new ZumbiTwittero(new Prontuario());
         Window win = new Window();
         win.open();

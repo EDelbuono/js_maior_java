@@ -1,7 +1,7 @@
 package jsmaiorjava.interfaces;
 
 public interface IWindowOperation {
-    void onFirstButtonPress();
-    void onSecondButtonPress();
-    void onThirdButtonPress();
+    <Type> Type onFirstButtonPress();
+    <Type> Type onSecondButtonPress();
+    <Type> Type onThirdButtonPress();
 }

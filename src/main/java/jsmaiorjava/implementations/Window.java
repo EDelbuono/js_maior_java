@@ -1,6 +1,5 @@
 package jsmaiorjava.implementations;
 
-
 import jsmaiorjava.interfaces.IWindow;
 import jsmaiorjava.interfaces.IWindowOperation;
 
@@ -43,15 +42,15 @@ public class Window implements IWindow {
     }
 
     // Twitter and Atestado functions
-    public void printTwitter() {
-        operations.onFirstButtonPress();
+    public String printTwitter() {
+        return operations.onFirstButtonPress();
     }
-    public void printAtestado() {
-        operations.onSecondButtonPress();
+    public String printAtestado() {
+        return operations.onSecondButtonPress();
     }
     // When click to go to the next question (is a callback function)
-    public void nextQuestion() {
-        operations.onThirdButtonPress();
+    public String nextQuestion() {
+        return operations.onThirdButtonPress();
     }
 
     // open the window
