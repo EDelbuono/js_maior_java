@@ -1,1 +1,1 @@
-javac -cp ../lib/twitter4j-core-4.0.6.jar -d ../compiled ../src/main/java/*.java ../src/main/java/jsmaiorjava/interfaces/*.java ../src/main/java/jsmaiorjava/implementations/*.java
+sudo javac -cp "../lib/twitter4j-core-4.0.6.jar:../lib/itextpdf-5.1.0.jar" -d "../compiled" ../src/main/java/*.java ../src/main/java/jsmaiorjava/interfaces/*.java ../src/main/java/jsmaiorjava/implementations/*.java
