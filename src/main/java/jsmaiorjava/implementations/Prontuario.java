@@ -26,7 +26,7 @@ public class Prontuario implements IProntuario{
   */
 
   public Prontuario(String paciente, String doutor, String doenca){
-    this.doutor="Doutor "+doutor;
+    this.doutor=doutor;
     this.paciente=paciente;
     this.doenca=doenca;
     this.tratamento = new Tratamento(doenca);
