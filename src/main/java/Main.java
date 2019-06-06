@@ -17,10 +17,11 @@ public class Main {
     //  IZumbiTwittero zt = new ZumbiTwittero(new Prontuario());
 
         /* Teste da janela */
-    /*
-        Window win = new Window();
+        
+        /*
+        IWindow win = WindowFactory.createWindow();
         win.open();
-    */
+        */
 
         /* Teste de logica do programa */
     /*  try {
