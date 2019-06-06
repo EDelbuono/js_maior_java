@@ -29,7 +29,7 @@ public class ImprimeAtestado implements IImprimeAtestado {
     public void imprime(IProntuario prontuario) {
         Document document = new Document();
         try {
-            PdfWriter.getInstance(document, new FileOutputStream("iTextHelloWorld.pdf"));
+            PdfWriter.getInstance(document, new FileOutputStream("atestado.pdf"));
             // Cria os parágrafos
             Paragraph titulo1 = new Paragraph("ATESTADO MÉDICO");
             Paragraph titulo2 = new Paragraph("TRATAMENTO:");
@@ -57,7 +57,7 @@ public class ImprimeAtestado implements IImprimeAtestado {
             DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
             Calendar cal = Calendar.getInstance();
             Chunk dt = new Chunk(dateFormat.format(cal.getTime()));
-            Paragraph data = new Paragraph("DATA: "+ dt); 
+            Paragraph data = new Paragraph("DATA: " + dt); 
             //Alinhamentos
             titulo1.setAlignment(1);
             assinatura.setAlignment(1);
@@ -80,6 +80,5 @@ public class ImprimeAtestado implements IImprimeAtestado {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        // System.out.println("Nome do doutor: " + prontuario.getDoutor() + " Nome do Paciente: " + prontuario.getPaciente() + "\n" + "Tratamento: " + prontuario.getTratamento());
     }
 }

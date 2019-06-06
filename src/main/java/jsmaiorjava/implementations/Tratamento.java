@@ -13,7 +13,7 @@ public class Tratamento implements ITratamento {
             "fazer agachamentos com peso",
             "sentar numa cadeira",
             "cheirar cola",
-            "beber corotin",
+            "Consumir durante 14 dias, a cada 6 horas, 2 cápsulas de brainpill. Repousar durante o dia.",
             "fumar o conceito de espaço-tempo",
             "tomar novalgina"
         };

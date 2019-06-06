@@ -6,11 +6,11 @@ public class Main {
 
         /* Teste da impressão do PDF */
        
-    /*  
-        IImprimeAtestado atestado = new ImprimeAtestado();
+     
+       /*  IImprimeAtestado atestado = new ImprimeAtestado();
         IProntuario prontuario = new Prontuario("João", "Victor Coelho", "dor de cabeça");
-        atestado.imprime(prontuario); 
-    */
+        atestado.imprime(prontuario);  */
+   
         
         /* Teste do Twitter */
 
