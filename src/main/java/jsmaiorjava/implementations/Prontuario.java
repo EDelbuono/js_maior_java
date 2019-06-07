@@ -9,8 +9,8 @@ import java.util.Random;
 
 
 public class Prontuario implements IProntuario{
-  static final String MAI = "AÁBCDEFGHIÍJKLMNOÔPQRSTUVWXYZ";
-  static final String MIN = "aábcdeêfghiíjklmnoõpqrstuvwxyz";
+  static final String MAI = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  static final String MIN = "abcdefghijklmnopqrstuvwxyz";
   
   private String doutor="";
   private String paciente="";
