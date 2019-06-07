@@ -13,7 +13,6 @@ Interface | `IZumbiTwittero`
 interface IZumbiTwittero {
   public boolean twittar(); // retorna true ou false dependendo do sucesso
 }
-
 ~~~
 
 ## Detalhamento da Interface
@@ -51,6 +50,25 @@ Esta interface implementa a impressão do atestado do paciente, em formato pdf. 
 Método | Objetivo
 -------| --------
 `imprime(IProntuario prontuario)` | `Imprime um atestado em formato pdf`
+
+
+## Interfaces comuns às componentes
+
+~~~java
+public interface IProntuario {
+  public String getDoutor();
+  public String getDoutor(String nome);
+  public String getPaciente();
+  public String getPaciente(String nome);
+  public String getDoenca();
+  public String getTratamento();
+}
+
+public interface ITratamento {
+    String getDoenca();
+    String getTratamento();
+}
+~~~
 
 ### Interface `ITratamento`
 `Implementa a forma como os tratamentos são conectados às doenças específicas de cada iteração.
