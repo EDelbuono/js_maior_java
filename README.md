@@ -20,11 +20,12 @@ interface IZumbiTwittero {
 
 ### Interface `IZumbiTwittero`
 
-Essa interface tem o objetivo de publicar, em um tweet, o diagnóstico do paciente, contendo as informações da interface IProntuario mencionada a seguir, através do perfil "ZumbiDoutor" (@ZumbiDoutor). Sua implementação possui dois construtores, `ZumbiTwittero(IProntuario prontuario)` e `ZumbiTwittero(IProntuario prontuario, String formato)`, em que `formato` é uma String, que representaria um tweet personalizado do usuário, mas que deve conter os termos `@doutor`, `@paciente`, `@tratamento` e `@doenca` (que serão substituídos por uma função de escopo interno à classe pelos termos guardados na variável `prontuario`) e no máximo 280 caracteres. Caso não seja fornecido um formato de tweet, será utilizado o padrão, da forma "AE MEUS BONS, MAIS DOENÇAS DIAGNOSTICADAS: @doutor examinando @paciente. O tratamento consiste em: @tratamento. Vamos erradicar tudo que seja @doenca."
+Essa interface tem o objetivo de publicar, em um tweet, o diagnóstico do paciente, contendo as informações da interface IProntuario mencionada a seguir, através do perfil "ZumbiDoutor" (@ZumbiDoutor). Sua implementação possui dois construtores, `ZumbiTwittero(IProntuario prontuario)` e `ZumbiTwittero(IProntuario prontuario, String formato)`, em que `formato` é uma String, que representaria um tweet personalizado do usuário, mas que deve conter os termos `@doutor`, `@paciente`, `@tratamento` e `@doenca` (que serão substituídos por uma função de escopo interno à classe pelos termos guardados na variável `prontuario`) e no máximo **280** caracteres. Caso não seja fornecido um formato de tweet, será utilizado o padrão, da forma:
+*"AE MEUS BONS, MAIS DOENÇAS DIAGNOSTICADAS: `@doutor` examinando `@paciente`. O tratamento consiste em: `@tratamento`. Vamos erradicar tudo que seja `@doenca`.*"
 
 Método | Objetivo
 -------| --------
-`imprimirAtestado(IDiagnostico diagnostico)` | `Imprime um atestado`
+`twittar()` | `Publica um tweet no perfil ZumbiDoutor, acessável pelo link https://twitter.com/ZumbiDoutor`
 
 # Componente `Atestado`
 
@@ -32,12 +33,11 @@ Campo | Valor
 ----- | -----
 Classe | `jsmaiorjava.implementations.ImprimeAtestado`
 Autores | `Victor Coelho, André Gouvêa e Enrico Delbuono`
-Objetivo | `Gerar um atestado com a recomendações de tratamento para um doença. O atestado irá conter o nome do doutor também.`
-Interface | `IAtestado`
+Objetivo | `Gerar um atestado com as recomendações de tratamento para um doença. O atestado irá conter o nome do doutor, do paciente, de sua doença, assim como a data e hora atuais e uma assinatura do doutor.`
+Interface | `IImprimeAtestado`
 ~~~java
 interface IImprimeAtestado {
-  prontuario
-  public boolean imprime(IDiagnostico diagnostico);
+  public void imprime(IProntuario prontuario);
 }
 ~~~
 
@@ -46,11 +46,11 @@ interface IImprimeAtestado {
 
 ### Interface `IImprimeAtestado`
 
-Esta interface implementa a impressão do atestado do paciente.
+Esta interface implementa a impressão do atestado do paciente, em formato pdf. Essa interface simula um atestado médico que contém os nomes do médico e paciente, a doença diagnosticada, a data e hora em que foi "feito" o atestado e uma assinatura gerada a partir do nome do médico armazenado no objeto `prontuario`.
 
 Método | Objetivo
 -------| --------
-`imprimirAtestado(IDiagnostico diagnostico)` | `Imprime um atestado`
+`imprime(IProntuario prontuario)` | `Imprime um atestado em formato pdf`
 
 ### Interface `ITratamento`
 `Implementa a forma como os tratamentos são conectados às doenças específicas de cada iteração.
