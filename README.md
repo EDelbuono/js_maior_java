@@ -1,47 +1,37 @@
 
-# Projeto 
-
- Receber e analisar uma tabela com informaçõe de sintomas e doenças. A partir disso o usuário podera escolher entre imprimir um atestado ou twittar a doença. O programa de ve rodar ate que seja fechado para guardar estatisticas de doenças e suas recorrência.
- O diagnostico será gerado a partir dos sintomas que o usuário ou irá marcar em checkbox ou irá responder a uma pergunta e usaremos processamento de linguagem natural para decidir se é positivo ou negativo a resposta.
-
- Vamos usar as seguintes bibliotecas e componentes:
-  - PDF creator;
-  - Twitter API;
-  - Arvore balançeada (Component externo ou o nosso);
-  - Analise de estaticas;
-  - Inteface gráfica  
-
-  O que devemos implementar:
-
-  - A analise e gerar o diagnostico usando a arvore balanceada;
-  - Integrar a bibliotecas.
-  - Usar a interface grafica;
-
 # Components
 
 # Componente `Zumbi Twitteiro`
-`Interface cujo objetivo é publicar, em um tweet, o diagnóstico do paciente, contendo as informações da interface IDiagnostico mencionada`.
 
 Campo | Valor
 ----- | -----
-Classe | `jsmaiorjava.ZumbiTwittero`
-Autores | `Tiago Dall'Oca e Frederico Rappa`
-Objetivo | `Twitta as informações do diagnóstico (nomes do paciente, doutor e doença) e fatos interessantes ou memes`
+Classe | `jsmaiorjava.implementations.ZumbiTwittero`
+Autores | `Tiago Dall'Oca, Frederico Rappa e Gabriel Ferreira`
+Objetivo | `Twitta as informações do diagnóstico (nomes do paciente, doutor, doença e seu tratamento)`
 Interface | `IZumbiTwittero`
 ~~~java
 interface IZumbiTwittero {
-  public boolean twittar(IDiagnostico diagnostico); // retorna true ou false dependendo do sucesso
+  public boolean twittar(); // retorna true ou false dependendo do sucesso
 }
 
 ~~~
 
+## Detalhamento da Interface
+
+### Interface `IZumbiTwittero`
+
+Essa interface tem o objetivo de publicar, em um tweet, o diagnóstico do paciente, contendo as informações da interface IProntuario mencionada a seguir, através do perfil "ZumbiDoutor" (@ZumbiDoutor). Sua implementação possui dois construtores, `ZumbiTwittero(IProntuario prontuario)` e `ZumbiTwittero(IProntuario prontuario, String formato)`, em que `formato` é uma String, que representaria um tweet personalizado do usuário, mas que deve conter os termos `@doutor`, `@paciente`, `@tratamento` e `@doenca` (que serão substituídos por uma função de escopo interno à classe pelos termos guardados na variável `prontuario`) e no máximo 280 caracteres. Caso não seja fornecido um formato de tweet, será utilizado o padrão, da forma "AE MEUS BONS, MAIS DOENÇAS DIAGNOSTICADAS: @doutor examinando @paciente. O tratamento consiste em: @tratamento. Vamos erradicar tudo que seja @doenca."
+
+Método | Objetivo
+-------| --------
+`imprimirAtestado(IDiagnostico diagnostico)` | `Imprime um atestado`
 
 # Componente `Atestado`
 
 Campo | Valor
 ----- | -----
-Classe | `jsmaiorjava.Atestado`
-Autores | ``
+Classe | `jsmaiorjava.implementations.ImprimeAtestado`
+Autores | `Victor Coelho, André Gouvêa e Enrico Delbuono`
 Objetivo | `Gerar um atestado com a recomendações de tratamento para um doença. O atestado irá conter o nome do doutor também.`
 Interface | `IAtestado`
 ~~~java
@@ -54,7 +44,7 @@ interface IImprimeAtestado {
 
 ## Detalhamento das Interfaces
 
-### Interface `IAtestado`
+### Interface `IImprimeAtestado`
 
 Esta interface implementa a impressão do atestado do paciente.
 
