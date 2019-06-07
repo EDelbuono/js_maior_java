@@ -71,9 +71,9 @@ public interface ITratamento {
 ~~~
 
 ### Interface `ITratamento`
-`Implementa a forma como os tratamentos são conectados às doenças específicas de cada iteração.
+Implementa a forma como os tratamentos são conectados às doenças específicas de cada iteração.
  O método addTratamento conecta cada uma das doenças da tabela a um tratamento aleatório, porém
-único para essa iteração do programa.`.
+único para essa iteração do programa..
 
 Método | Objetivo
 -------| --------
@@ -81,7 +81,7 @@ Método | Objetivo
 `String getTratamento(String doenca)` | `Retorna o tratamento`
 
 ### Interface `IDiagnostico`
-`Interface que junta as informações de um dado caso`.
+Interface que junta as informações de um dado caso.
 
 Método | Objetivo
 -------| --------
@@ -91,6 +91,3 @@ Método | Objetivo
 `public String descricaoDoenca()` | `Retorna a descrição da doença`
 `public String tratamento()` | `Retorna o tratamento para a doença`
 
-OBS:
-ITratamentos deve ter a relação entre doença e tratamento;
-Ela deve ser preenchida quando lermos os dados com as doenças, de forma aleatoria
