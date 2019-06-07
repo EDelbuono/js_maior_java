@@ -19,7 +19,7 @@ public class Tratamento implements ITratamento {
             "fumar o conceito de espaço-tempo",
             "tomar novalgina",
             "beijar uma orelha",
-            "assistir uma aula do Bassi",
+            "assistir a uma aula do Bassi",
             "apreciar a beleza do IFGW",
             "tomar corotin",
             "não comer no bandeijaõ",
