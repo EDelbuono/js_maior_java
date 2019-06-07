@@ -80,14 +80,15 @@ Método | Objetivo
 `void addTratamento(String doenca, String Tratamento)` | `Adiciona um novo tratamento a lista`
 `String getTratamento(String doenca)` | `Retorna o tratamento`
 
-### Interface `IDiagnostico`
-Interface que junta as informações de um dado caso.
+### Interface `IProntuario`
+A interface se encarrega do armazenamento de dados com nome do paceiente, do doutor, da doenca e seu tratamento para que sejam utilizados pelos métodos das duas outras componentes, ou outras. Objetos que inmplementam a interface possuem quatro possíveis construtores: `Prontuario(String paciente, String doutor, String doenca)`; `Prontuario(String doenca)`; `Prontuario(ITratamento tratamento)` e `Prontuario(ITratamento tratamento, String paciente, String doutor)`. Caso não sejam fornecidos os nomes do médico e do paciente, (`doutor` e `paciente`), serão gerados nomes aleatórios; caso o usuário queira fornecer somente um desses nomes, deve colocar uma string vazia "" no parâmetro em que se deseja um nome aleatório.
 
 Método | Objetivo
 -------| --------
-`public String doutor()` | `Retorna o nome do doutor`
-`public String paciente()` | `Retorna o nome do paciente`
-`public String doenca()` | `Retorna o nome da doença`
-`public String descricaoDoenca()` | `Retorna a descrição da doença`
-`public String tratamento()` | `Retorna o tratamento para a doença`
+`public String getDoutor()` | `Retorna o nome do doutor`
+~~public String getDoutor(String nome)~~ | **[Depreciado]**`Retorna o nome do doutor caso não seja passado como parâmetro no construtor`
+`public String getPaciente()` | `Retorna o nome do paciente`
+~~public String getPaciente(String nome)~~ | **[Depreciado]**`Retorna o nome do pacientecaso não seja passado como parâmetro no construtor`
+`public String getDoenca()` | `Retorna o nome da doença`
+`public String getTratamento()` | `Retorna o tratamento para a doença, obtido pela interface ITratamento`
 
