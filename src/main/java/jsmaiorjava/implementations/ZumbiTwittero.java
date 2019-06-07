@@ -9,17 +9,27 @@ import twitter4j.TwitterFactory;
 public class ZumbiTwittero implements IZumbiTwittero {
 
     protected IProntuario prontuario;
+    protected String formato;
 
     public ZumbiTwittero(IProntuario prontuario){
-        this.prontuario = prontuario;
+        this(prontuario, "AE MEUS BONS, MAIS DOENÇAS DIAGNOSTICADAS:\n" +
+                        "@doutor " +
+                        "examinando @paciente.\n" +
+                        "O tratamento consiste em: @tratamento\n" +
+                        "Vamos erradicar tudo que seja @doenca.");
     }
 
     protected String construirStatus(){
-        return "AE MEUS BONS, MAIS DOENÇAS DIAGNOSTICADAS:\n" +
-                prontuario.getDoutor() + " " +
-                "examinando " + prontuario.getPaciente() + ".\n" +
-                "O tratamento consiste em: " + prontuario.getTratamento() + "\n" +
-                "Vamos erradicar tudo que seja " + prontuario.getDoenca() + ".";
+        return formato
+                .replace("@doutor", prontuario.getDoutor())
+                .replace("@paciente", prontuario.getPaciente())
+                .replace("@tratamento", prontuario.getTratamento())
+                .replace("@doenca", prontuario.getDoenca());
+    }
+
+    public ZumbiTwittero(IProntuario prontuario, String formato){
+        this.prontuario = prontuario;
+        this.formato = formato;
     }
 
     public boolean twittar() {

@@ -21,13 +21,4 @@
             <version>5.5.10</version>
         </dependency>
     </dependencies>
-    <build>
-        <resources>
-            <resource>
-                <directory>resources/</directory>
-            </resource>
-        </resources>
-    </build>
-
-
 </project>
