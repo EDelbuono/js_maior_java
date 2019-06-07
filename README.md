@@ -71,14 +71,12 @@ public interface ITratamento {
 ~~~
 
 ### Interface `ITratamento`
-Implementa a forma como os tratamentos são conectados às doenças específicas de cada iteração.
- O método addTratamento conecta cada uma das doenças da tabela a um tratamento aleatório, porém
-único para essa iteração do programa..
+Implementa a forma como os tratamentos são conectados às doenças específicas de cada iteração. O método getDoenca retorna a doença do zumbi, e o método getTratamento retorna o tratamento referente à doença.
 
 Método | Objetivo
 -------| --------
-`void addTratamento(String doenca, String Tratamento)` | `Adiciona um novo tratamento a lista`
-`String getTratamento(String doenca)` | `Retorna o tratamento`
+`String getDoenca()` | `Retorna a doença`
+`String getTratamento()` | `Retorna o tratamento`
 
 ### Interface `IProntuario`
 A interface se encarrega do armazenamento de dados com nome do paceiente, do doutor, da doenca e seu tratamento para que sejam utilizados pelos métodos das duas outras componentes, ou outras. Objetos que inmplementam a interface possuem quatro possíveis construtores: `Prontuario(String paciente, String doutor, String doenca)`; `Prontuario(String doenca)`; `Prontuario(ITratamento tratamento)` e `Prontuario(ITratamento tratamento, String paciente, String doutor)`. Caso não sejam fornecidos os nomes do médico e do paciente, (`doutor` e `paciente`), serão gerados nomes aleatórios; caso o usuário queira fornecer somente um desses nomes, deve colocar uma string vazia "" no parâmetro em que se deseja um nome aleatório.
