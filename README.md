@@ -88,7 +88,7 @@ Método | Objetivo
 `public String getDoutor()` | `Retorna o nome do doutor`
 ~~public String getDoutor(String nome)~~ | **[Depreciado]**`Retorna o nome do doutor caso não seja passado como parâmetro no construtor`
 `public String getPaciente()` | `Retorna o nome do paciente`
-~~public String getPaciente(String nome)~~ | **[Depreciado]**`Retorna o nome do pacientecaso não seja passado como parâmetro no construtor`
+~~public String getPaciente(String nome)~~ | **[Depreciado]**`Retorna o nome do paciente caso não seja passado como parâmetro no construtor`
 `public String getDoenca()` | `Retorna o nome da doença`
 `public String getTratamento()` | `Retorna o tratamento para a doença, obtido pela interface ITratamento`
 
